@@ -8,7 +8,7 @@ WORKDIR /
 COPY requirements.txt .
 
 # install dependencies
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt -i "https://pypi.tuna.tsinghua.edu.cn/simple"
 
 # copy the content of the local src directory to the working directory
 COPY src/ /src/
